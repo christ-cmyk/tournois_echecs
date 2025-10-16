@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🏆 Gestionnaire de Tournois d'Échecs
 
 Application console autonome en Python pour gérer les tournois d'échecs du Centre, compatible Windows, Mac et Linux.
@@ -168,3 +169,6 @@ Pour toute question ou problème :
 ## 🏆 Auteur
 
 Développé pour le Centre d'échecs - Application console autonome pour remplacer l'application en ligne instable.
+=======
+"# Tournois �checs" 
+>>>>>>> 5f16651e1970c53e19750ae21fd20f84052f6027
