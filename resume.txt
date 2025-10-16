@@ -1,0 +1,88 @@
+RÉSUMÉ DE L'APPLICATION DE GESTION DE TOURNOIS D'ÉCHECS
+================================================
+
+STRUCTURE DE L'APPLICATION
+-------------------------
+
+1. APP_CORE/ - Cœur de l'application
+   - app.py : Point d'entrée principal de l'application
+   - handlers_players.py : Gestion des actions liées aux joueurs
+   - handlers_reports.py : Gestion de la génération des rapports
+   - handlers_tournaments.py : Gestion des tournois
+
+2. CONTROLLERS/ - Logique métier
+   - player_controller.py : Gestion des opérations sur les joueurs
+   - report_controller.py : Génération des différents rapports
+   - tournament_controller.py : Gestion des tournois
+   - mixins/ : Fonctionnalités spécifiques aux tournois
+     - tournament_create.py : Création de tournois
+     - tournament_pairs.py : Gestion des appariements
+     - tournament_queries.py : Requêtes sur les tournois
+
+3. MODELS/ - Modèles de données
+   - player.py : Modèle des joueurs
+   - tournament.py : Modèle des tournois
+   - round.py : Gestion des rondes
+   - match.py : Gestion des matchs
+
+4. VIEWS/ - Interface utilisateur
+   - player_view.py : Affichage des menus et formulaires joueurs
+   - tournament_view.py : Affichage des menus tournois
+   - report_view.py : Affichage des rapports
+   - main_view.py : Menu principal
+   - mixins/ : Composants réutilisables pour les vues
+
+FONCTIONNALITÉS PRINCIPALES
+-------------------------
+
+1. Gestion des Joueurs
+   - Ajout, modification et suppression de joueurs
+   - Classement des joueurs
+   - Affichage par ordre alphabétique ou par classement
+
+2. Gestion des Tournois
+   - Création et gestion de tournois
+   - Gestion des rondes et des matchs
+   - Suivi des scores et classements
+
+3. Rapports
+   - Liste des joueurs (tous ou par tournoi)
+   - Détails des tournois
+   - Historique des matchs et résultats
+
+POINTS IMPORTANTS
+----------------
+
+1. Architecture MVC
+   - Séparation claire entre Modèle, Vue et Contrôleur
+   - Code modulaire et maintenable
+
+2. Gestion des Données
+   - Persistance des données (TinyDB à implémenter)
+   - Validation des entrées utilisateur
+
+3. Interface Utilisateur
+   - Menus en ligne de commande clairs
+   - Retours utilisateur immédiats
+
+4. Conformité
+   - Code conforme aux standards PEP 8
+   - Documentation complète des fonctions et classes
+
+INSTRUCTIONS D'UTILISATION
+------------------------
+1. Lancer l'application : python programme.py
+2. Suivre les menus pour naviguer dans l'application
+3. Utiliser les options numériques pour effectuer des actions
+
+NOTES DE DÉPLOIEMENT
+-------------------
+- Python 3.7+ requis
+- Dépendances : flake8 (pour la vérification du code)
+- Base de données : TinyDB (à implémenter)
+
+AUTEUR ET VERSION
+----------------
+- Application développée par [Votre Nom]
+- Version : 1.0.0
+- Dernière mise à jour : Octobre 2025

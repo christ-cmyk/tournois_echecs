@@ -1,0 +1,5 @@
+[flake8]
+max-line-length = 119
+exclude = .venv, flake8_rapport
+extend-ignore = E203, W293, W291
+
